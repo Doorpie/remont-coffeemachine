@@ -28,7 +28,10 @@ $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
-
+$black: #333;
+$yellow: #fed03d;
+$gray: #f5f5f5;
+$white: #fcfcfc;
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
@@ -36,7 +39,8 @@ $md4: 479.98;
 
 body {
     color: #000;
-    font-size: 13px/20px;
+    font-size: 13px;
+    line-height: 20px;
 
     &._lock {
         overflow: hidden;
@@ -62,8 +66,8 @@ body {
 ._container {
     // max-width: $maxWidthContainer + px;
     margin: 0 auto;
-    padding-left: 4%;
-    padding-right: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
 
     // @media (max-width: $md1+px) {
     //     max-width: 970px;

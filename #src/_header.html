@@ -1,17 +1,17 @@
 <header class="header">
 	<div class="header__content _container">
 		<a href="/" class="logo">
-			<img src="./img/logo-coffee.png" alt="logo" class="logo__img" width="250" height="85">
+			<img src="./img/logo-coffee.png" alt="logo" class="logo__img">
 		</a>
 		<nav class="menu">
-			<button class="menu__button" type="button">
-				<svg class="menu__icon" width="32" height="32">
+			<button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+				<svg class="menu__icon" width="32" height="32" aria-hidden="true">
 					<use class="menu__icon-menu" href="./img/icons/sprite.svg#menu"></use>
 					<use class="menu__icon-cross" href="./img/icons/sprite.svg#cross"></use>
 				</svg>
 			</button>
-			<ul class="menu__list">
-				<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+			<ul class="menu__list menu__list--open" id="menu__list">
+				<li class="menu__item"><a href="#" class="menu__link menu__link--active">Главная</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">Неисправности</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">Сервис</a></li>
